@@ -1,0 +1,31 @@
+body {
+      background-color: #72b4b4;
+      text-align: center;
+      color: #144056;
+      font-family: 'Nunito Sans', sans-serif;
+}
+button {
+      background-color: #144056;
+      border-color: #144056;
+      color: white;
+      padding: 5px;
+}
+a {
+    color: white;  
+}
+img {    
+      height: 200px;
+      width: auto;
+}
+#payment-middle {
+      border: #144056 solid 2px;
+      padding: 5px;
+}
+#heading {
+      font-weight: bold;
+}
+.items {
+      height:100px;
+      width:100px;
+      padding: 2px;
+}

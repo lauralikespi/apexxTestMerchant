@@ -1,0 +1,319 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+html,
+body {
+  background-color: rgba(1,186,170,0.48);
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-weight: 300;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+html .card,
+body .card {
+  background-color: #fff;
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 3px;
+  margin-top: 100px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+html .card .card__header,
+body .card .card__header {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #2c3e54;
+  padding: 0 20px;
+  min-height: 100px;
+}
+html .card .card__header .amount,
+body .card .card__header .amount {
+  line-height: 100px;
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+html .card .card__header .amount p,
+body .card .card__header .amount p {
+  text-align: left;
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 15px;
+  color: #fff;
+  margin: 0;
+}
+html .card .card__header .details,
+body .card .card__header .details {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  width: 50%;
+  display: inline-block;
+}
+html .card .card__header .details p,
+body .card .card__header .details p {
+  text-align: right;
+  color: #fff;
+  margin: 0;
+  line-height: 25px;
+  font-size: 14px;
+}
+html .card .card__header .details p#business_name,
+body .card .card__header .details p#business_name {
+  font-weight: 500;
+}
+html .card .card__header .details p#merchant_reference,
+body .card .card__header .details p#merchant_reference {
+  word-break: break-word;
+}
+html .card .card__content #payment_fieldset fieldset,
+body .card .card__content #payment_fieldset fieldset {
+  width: 100%;
+  position: relative;
+}
+html .card .card__content #payment_fieldset fieldset .row #_payment_product_container,
+body .card .card__content #payment_fieldset fieldset .row #_payment_product_container {
+  padding: 0;
+}
+html .card .card__content #payment_fieldset fieldset .row #_payment_product_container .jc-productTab,
+body .card .card__content #payment_fieldset fieldset .row #_payment_product_container .jc-productTab {
+  float: left;
+  margin: 0;
+  width: 50%;
+  border-radius: 0;
+  border-color: rgba(33,33,33,0.12);
+  box-sizing: border-box;
+}
+html .card .card__content #payment_fieldset fieldset .row #_payment_product_container .jc-productTab:hover,
+body .card .card__content #payment_fieldset fieldset .row #_payment_product_container .jc-productTab:hover {
+  background-image: none;
+  background-color: rgba(33,33,33,0.12);
+}
+html .card .card__content #payment_fieldset fieldset .row #_payment_product_container .jc-productTab.jc-productTabSelected,
+body .card .card__content #payment_fieldset fieldset .row #_payment_product_container .jc-productTab.jc-productTabSelected {
+  border: 2px solid #2c3e54;
+}
+html .card .card__content #payment_fieldset fieldset #_main_container,
+body .card .card__content #payment_fieldset fieldset #_main_container {
+  padding: 20px;
+  margin: 0;
+}
+html .card .card__content #payment_fieldset fieldset #_main_container .row label,
+body .card .card__content #payment_fieldset fieldset #_main_container .row label {
+  border: none;
+}
+html .card .card__content #payment_fieldset fieldset #_main_container .row label.jc-cardNumberLabel .jc-cardNumberSpan,
+body .card .card__content #payment_fieldset fieldset #_main_container .row label.jc-cardNumberLabel .jc-cardNumberSpan {
+  right: 10px;
+}
+html .card .card__content #payment_fieldset fieldset #_main_container .row label .jc-bootstrapSpanImage,
+body .card .card__content #payment_fieldset fieldset #_main_container .row label .jc-bootstrapSpanImage {
+  margin-top: -15px;
+  background-size: 35px !important;
+  height: 30px;
+  width: 50px;
+}
+html .card .card__content #payment_fieldset fieldset #_main_container .row label .jc-materializeSpanImage,
+body .card .card__content #payment_fieldset fieldset #_main_container .row label .jc-materializeSpanImage {
+  margin-top: -20px;
+}
+html .card .card__content #payment_fieldset fieldset #_main_container .row label.jc-cvvLabel .jc-cvvSpan,
+body .card .card__content #payment_fieldset fieldset #_main_container .row label.jc-cvvLabel .jc-cvvSpan {
+  right: 10px;
+}
+html .card .card__content #payment_fieldset fieldset #_main_container .row label input,
+body .card .card__content #payment_fieldset fieldset #_main_container .row label input {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+html .card .card__content #payment_fieldset fieldset #_main_container #_ideal_label,
+body .card .card__content #payment_fieldset fieldset #_main_container #_ideal_label {
+  width: 100%;
+  margin-bottom: 10px;
+}
+html .card .card__content #payment_fieldset fieldset #_main_container #ideal_select,
+body .card .card__content #payment_fieldset fieldset #_main_container #ideal_select {
+  width: 100%;
+  margin-bottom: 20px;
+}
+html .card .card__content #payment_fieldset fieldset #_main_container #_submit_button,
+body .card .card__content #payment_fieldset fieldset #_main_container #_submit_button {
+  width: 100%;
+  line-height: 25px;
+  font-weight: 500;
+}
+@media (max-width: 414px) {
+  .html,
+  body {
+    height: 100%;
+    overflow: auto;
+    background-color: #fff;
+  }
+  .html .container-fluid,
+  body .container-fluid {
+    height: 100%;
+    padding: 0;
+  }
+  .html .container-fluid .row,
+  body .container-fluid .row {
+    height: 100%;
+  }
+  .html .container-fluid .row .card,
+  body .container-fluid .row .card {
+    max-width: 100%;
+    height: 100%;
+    margin-top: 0;
+    box-shadow: none;
+  }
+  .html .container-fluid .row .card .card__header,
+  body .container-fluid .row .card .card__header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .html .container-fluid .row .card .card__content,
+  body .container-fluid .row .card .card__content {
+    padding-top: 100px;
+  }
+  .html .container-fluid .row .card .card__content #payment_fieldset fieldset #_main_container #_card_container,
+  body .container-fluid .row .card .card__content #payment_fieldset fieldset #_main_container #_card_container {
+    padding: 0;
+  }
+  .html .container-fluid .row .card .card__content #payment_fieldset fieldset #_main_container #_card_container input,
+  body .container-fluid .row .card .card__content #payment_fieldset fieldset #_main_container #_card_container input {
+    height: 40px;
+  }
+}
+@media (max-width: 320px) {
+  .html .container-fluid .row .card .card__header .amount p,
+  body .container-fluid .row .card .card__header .amount p {
+    font-size: 25px;
+  }
+}
