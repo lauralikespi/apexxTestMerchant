@@ -20,12 +20,12 @@ app.get('/payment', (req, res) => {
   // const apexxUrl = 'https://sandbox.apexxfintech.com/v1/checkout';
   const apexxUrl = 'https://apexx.dimebox.com/v1/checkout';
 
-  const API_KEY = "ENTER YOUR API KEY";
+  const API_KEY = "	TrWzfw0KQ8Z1-uaQsOsbMABb2UMIhR-MgRFMCG5Tfcc";
 
   var reqBody = {
-                  "account": "ENTER YOUR ACCOUNT",
+                  "account": "97a98914127313d929d7ae21",
                   "amount": 1750,
-                  "customer": "ENTER YOUR CUSTOMER",
+                  "customer": "ba99ac87c437f5d5667288ea",
                   "merchant_reference": "JJ-ORDER-0001",
                   "template_url": "https://lauralikespi.github.io/test.html",
                   "return_url": "https://jj7460.wixsite.com/visage",
@@ -35,7 +35,7 @@ app.get('/payment', (req, res) => {
                           "capture_now": true,
                           "dynamic_descriptor": "JJ eShop",
                           "threed_secure": {
-                              "enabled": true,
+                              "enabled": true ,
                               "description": "Short description, shown on 3DS page"
                           }
                       }
